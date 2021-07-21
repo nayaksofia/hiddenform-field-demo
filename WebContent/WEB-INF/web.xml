@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>HiddenFormField</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HiddenFormServlet</display-name>
+    <servlet-name>HiddenFormServlet</servlet-name>
+    <servlet-class>com.HiddenFormServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HiddenFormServlet</servlet-name>
+    <url-pattern>/hiddenformlogin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>HiddenFormDashboard</display-name>
+    <servlet-name>HiddenFormDashboard</servlet-name>
+    <servlet-class>com.HiddenFormDashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HiddenFormDashboard</servlet-name>
+    <url-pattern>/hiddenformdashboard</url-pattern>
+  </servlet-mapping>
+</web-app>

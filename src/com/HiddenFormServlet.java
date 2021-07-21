@@ -32,7 +32,7 @@ public class HiddenFormServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		doGet(request, response);
+		doGet(request, response);//Redirecting post method to doGet method
 	}
 
 }
